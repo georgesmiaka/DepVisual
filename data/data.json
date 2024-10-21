@@ -1,0 +1,134 @@
+[
+    {
+        "base_dir": "../soa-solution/core-services/soa-vehicle-uplink-stateless-service",
+        "group_id": "com.wirelesscar.soa",
+        "artifact_id": "soa-sla-reporting-model",
+        "maven_analyse_used": false
+    },
+    {
+        "base_dir": "../soa-solution/provisioning/soa-comcheck-server",
+        "group_id": "com.wirelesscar.soa",
+        "artifact_id": "soa-sla-reporting-model",
+        "maven_analyse_used": false
+    },
+    {
+        "base_dir": "../soa-solution/provisioning/soa-prov-server",
+        "group_id": "com.wirelesscar.soa",
+        "artifact_id": "soa-sla-reporting-model",
+        "maven_analyse_used": false
+    },
+    {
+        "base_dir": "../soa-solution/sla/soa-sla-reporting-service",
+        "group_id": "com.wirelesscar.soa",
+        "artifact_id": "soa-sla-reporting-model",
+        "maven_analyse_used": false
+    },
+    {
+        "base_dir": "../soa-solution/services/soa-fota-server",
+        "group_id": "com.wirelesscar.soa",
+        "artifact_id": "soa-sla-reporting-model",
+        "maven_analyse_used": true
+    },
+    {
+        "base_dir": "../soa-solution/services/soa-fota-server/app",
+        "group_id": "com.wirelesscar.soa",
+        "artifact_id": "soa-sla-reporting-model",
+        "maven_analyse_used": false
+    },
+    {
+        "base_dir": "../soa-solution/services/soa-oem-service/app",
+        "group_id": "com.wirelesscar.soa",
+        "artifact_id": "soa-sla-reporting-model",
+        "maven_analyse_used": false
+    },
+    {
+        "base_dir": "../soa-solution/services/soa-drf-server",
+        "group_id": "com.wirelesscar.soa",
+        "artifact_id": "soa-sla-reporting-model",
+        "maven_analyse_used": true
+    },
+    {
+        "base_dir": "../soa-solution/services/soa-drf-server/app",
+        "group_id": "com.wirelesscar.soa",
+        "artifact_id": "soa-sla-reporting-model",
+        "maven_analyse_used": false
+    },
+    {
+        "base_dir": "../soa-solution/services/soa-rbc",
+        "group_id": "com.wirelesscar.soa",
+        "artifact_id": "soa-sla-reporting-model",
+        "maven_analyse_used": true
+    },
+    {
+        "base_dir": "../soa-solution/services/soa-rbc/app",
+        "group_id": "com.wirelesscar.soa",
+        "artifact_id": "soa-sla-reporting-model",
+        "maven_analyse_used": false
+    },
+    {
+        "base_dir": "../soa-solution/services/soa-sas-server",
+        "group_id": "com.wirelesscar.soa",
+        "artifact_id": "soa-sla-reporting-model",
+        "maven_analyse_used": false
+    },
+    {
+        "base_dir": "../soa-solution/services/soa-si",
+        "group_id": "com.wirelesscar.soa",
+        "artifact_id": "soa-sla-reporting-model",
+        "maven_analyse_used": false
+    },
+    {
+        "base_dir": "../soa-solution/services/soa-val-server",
+        "group_id": "com.wirelesscar.soa",
+        "artifact_id": "soa-sla-reporting-model",
+        "maven_analyse_used": true
+    },
+    {
+        "base_dir": "../soa-solution/services/soa-val-server/app",
+        "group_id": "com.wirelesscar.soa",
+        "artifact_id": "soa-sla-reporting-model",
+        "maven_analyse_used": false
+    },
+    {
+        "base_dir": "../soa-solution/services/soa-service-engine-server",
+        "group_id": "com.wirelesscar.soa",
+        "artifact_id": "soa-sla-reporting-model",
+        "maven_analyse_used": false
+    },
+    {
+        "base_dir": "../soa-solution/services/soa-ccc-server",
+        "group_id": "com.wirelesscar.soa",
+        "artifact_id": "soa-sla-reporting-model",
+        "maven_analyse_used": false
+    },
+    {
+        "base_dir": "../soa-solution/services/soa-vhs-server",
+        "group_id": "com.wirelesscar.soa",
+        "artifact_id": "soa-sla-reporting-model",
+        "maven_analyse_used": false
+    },
+    {
+        "base_dir": "../soa-solution/services/soa-hblfstop-server",
+        "group_id": "com.wirelesscar.soa",
+        "artifact_id": "soa-sla-reporting-model",
+        "maven_analyse_used": false
+    },
+    {
+        "base_dir": "../soa-solution/services/soa-triplog-server",
+        "group_id": "com.wirelesscar.soa",
+        "artifact_id": "soa-sla-reporting-model",
+        "maven_analyse_used": false
+    },
+    {
+        "base_dir": "../soa-solution/api/soa-sas-api",
+        "group_id": "com.wirelesscar.soa",
+        "artifact_id": "soa-sla-reporting-model",
+        "maven_analyse_used": false
+    },
+    {
+        "base_dir": "../soa-solution/monitoring/soa-cw-asg-alarms",
+        "group_id": "com.wirelesscar.soa",
+        "artifact_id": "soa-sla-reporting-model",
+        "maven_analyse_used": false
+    }
+]

@@ -1,0 +1,2 @@
+1. show directory of the dependencies in the search part (path to the component depended).
+2. for the graph, first se if some path indicate the same component. path1 include in path2. the collect unique (path1). take the last two part of the path as nodes.
