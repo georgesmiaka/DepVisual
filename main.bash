@@ -78,8 +78,20 @@ sub_sub_menu() {
                 clear
                 python3 dep_filtered.py
                 echo ""
+                cd server
+                echo "Starting web server..."
+                npm i
+                npm start &
+                cd ..
+                cd webclient
+                echo ""
+                echo "Starting web client..."
+                npm i
+                npm start &
+                cd ..
+                echo ""
                 echo "Launching Dependencies Visualization..."
-                python3 -m webbrowser -t "http://localhost:1338"
+                #python3 -m webbrowser -t "http://localhost:1338"
                 ;;
             3)  # Return to the sub-menu
                 return
@@ -94,7 +106,7 @@ sub_sub_menu() {
 # Display the title and ASCII image
 clear
 cat << "EOF"
-Component Dependencies Analysis
+Dependencies Analysis - DepVisual
 
    __    __    ___  _        __    __
   /'__`\ /\ \  / __`/\ \  /'__`\ /\ \
