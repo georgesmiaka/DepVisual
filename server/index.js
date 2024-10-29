@@ -2,6 +2,7 @@ const express = require("express");
 var cors = require('cors')
 const app = express();
 const port = 1337;
+const { spawn } = require('child_process');
 
 app.use(cors())
 const parser = require('body-parser');
@@ -13,8 +14,9 @@ app.use(urlencodedParser)
 app.get("/", (req, res) => {
     res.json({
         "/": "Shows a list of all possible routes that are used.",
-        "/data": "Shows a list of all possible dependent components.",
+        "/data": "Shows a list of all possible components", //"Shows a list of all possible dependent components.",
         "/data?keyword=keyword": "Shows components that contain the specific keyword.",
+        "/analyze": "Endpoint that receives the list of components being analyzed.",
         "/componentinfo": "Shows information about the component being analyzed.",
         "/graph": "Shows a list of all filtered dependent components.",
         "/graph/basedir": "Shows only the root directory of all filtered dependent components.",
@@ -22,7 +24,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/data", (req, res) => {
-    const itemsfile = require("../data/final_dependencies.json");
+    const itemsfile = require("../data/component.json");
     let result = [{"Message": "Data loading..."}];
 
     maxQueryParam = Object.keys(req.query).length;
@@ -44,6 +46,31 @@ app.get("/data", (req, res) => {
             break;
     }
     res.json(result);
+});
+
+app.put('/analyze', async (req, res) => {
+    const selectedDocs = req.body;
+
+    if (!selectedDocs || selectedDocs.length === 0) {
+        return res.status(400).send("No documents selected for analysis.");
+    }
+
+    // Run Python script and track output
+    const process = spawn('python3', ['../client/dep_analyze.py', JSON.stringify(selectedDocs)]);
+    
+    process.stdout.on('data', (data) => {
+        // Send progress to the client, e.g., via WebSocket, or save to a file/DB the client can poll
+        console.log(`Progress: ${data}`);
+    });
+
+    process.stderr.on('data', (data) => {
+        console.error(`Error: ${data}`);
+    });
+
+    process.on('close', (code) => {
+        console.log(`Script completed with code ${code}`);
+        res.json({ message: "Analysis complete" });
+    });
 });
 
 app.get("/componentinfo", (req, res) => {

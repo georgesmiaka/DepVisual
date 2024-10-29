@@ -1,1 +1,1652 @@
-[]
+[
+    {
+        "name": "soa-servicedata-codec",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/lib/soa-servicedata-codec/pom.xml"
+    },
+    {
+        "name": "soa-starter-scheduling",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/lib/soa-starter-scheduling/pom.xml"
+    },
+    {
+        "name": "ProvisioningTool",
+        "group_id": "com.wirelesscar.soa.provtool",
+        "version": "1.0-SNAPSHOT",
+        "base_dir": "../soa-solution/lib/soa-utils/provisioning-tool/pom.xml"
+    },
+    {
+        "name": "tldToKml",
+        "group_id": "com.wirelesscar.soa.tld",
+        "version": "1.0-SNAPSHOT",
+        "base_dir": "../soa-solution/lib/soa-utils/tldToKml/pom.xml"
+    },
+    {
+        "name": "decoder-util",
+        "group_id": "com.wirelesscar.soa",
+        "version": "1.0-SNAPSHOT",
+        "base_dir": "../soa-solution/lib/soa-utils/sd-decoder/pom.xml"
+    },
+    {
+        "name": "tsdp-parse-msg-tool",
+        "group_id": "com.wirelesscar.tsdp.helful-tools.jruby",
+        "version": "0.1-SNAPSHOT",
+        "base_dir": "../soa-solution/lib/soa-utils/parseDsptMsg/pom.xml"
+    },
+    {
+        "name": "message-decoder",
+        "group_id": "com.wirelesscar.tsdp.protocol",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/lib/soa-utils/tsdp-decoder-soa/pom.xml"
+    },
+    {
+        "name": "interface6",
+        "group_id": "com.wirelesscar.soa.if6",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/lib/soa-interface6/pom.xml"
+    },
+    {
+        "name": "if6-interface",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/lib/soa-interface6/interface/pom.xml"
+    },
+    {
+        "name": "soa-lambda-util",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/lib/soa-lambda-util/pom.xml"
+    },
+    {
+        "name": "soa-emf",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/lib/soa-emf/pom.xml"
+    },
+    {
+        "name": "soa-eventdata-converter",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/lib/soa-eventdata-converter/pom.xml"
+    },
+    {
+        "name": "soa-internal-jwt-issuer",
+        "group_id": "com.wirelesscar.soa.soaijwt",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/lib/soa-internal-jwt-issuer/pom.xml"
+    },
+    {
+        "name": "jwt-function",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/lib/soa-internal-jwt-issuer/jwt-function/pom.xml"
+    },
+    {
+        "name": "soa-starter-monitoring-micrometer",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/lib/soa-starter-monitoring-micrometer/pom.xml"
+    },
+    {
+        "name": "soa-starter-http",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/lib/soa-starter-http/pom.xml"
+    },
+    {
+        "name": "interface9",
+        "group_id": "com.wirelesscar.soa.if9",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/lib/soa-interface9/pom.xml"
+    },
+    {
+        "name": "if9-interface",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/lib/soa-interface9/interface/pom.xml"
+    },
+    {
+        "name": "soa-service-status-transformer",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/lib/soa-service-status-transformer/pom.xml"
+    },
+    {
+        "name": "soa-vehicle-uplink-stateless-service",
+        "group_id": "com.wirelesscar.soa.uplink",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/core-services/soa-vehicle-uplink-stateless-service/pom.xml"
+    },
+    {
+        "name": "soa-vehicle-uplink-stateless-service-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/core-services/soa-vehicle-uplink-stateless-service/app/pom.xml"
+    },
+    {
+        "name": "soa-vehiclestatus-protocol",
+        "group_id": "com.wirelesscar.soa.protocol.vehiclestatus",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/core-services/soa-vehiclestatus-protocol/pom.xml"
+    },
+    {
+        "name": "soa-vehiclestatus-service",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/core-services/soa-vehiclestatus-service/pom.xml"
+    },
+    {
+        "name": "vehiclestatus-service-persistence",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/core-services/soa-vehiclestatus-service/persistence/pom.xml"
+    },
+    {
+        "name": "soa-vehiclestatus-service-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/core-services/soa-vehiclestatus-service/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-vehiclestatus-service-core",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/core-services/soa-vehiclestatus-service/core/pom.xml"
+    },
+    {
+        "name": "soa-service-handler",
+        "group_id": "com.wirelesscar.soa.sh",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/core-services/soa-service-handler/pom.xml"
+    },
+    {
+        "name": "service-handler-compat",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/core-services/soa-service-handler/compat/pom.xml"
+    },
+    {
+        "name": "soa-service-handler-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/core-services/soa-service-handler/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "service-handler-protocol-parent",
+        "group_id": "com.wirelesscar.tsdp.sh.protocol",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/core-services/soa-service-handler/protocol/pom.xml"
+    },
+    {
+        "name": "service-handler-protocol-soa",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/core-services/soa-service-handler/protocol/soa/pom.xml"
+    },
+    {
+        "name": "soa-service-handler-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/core-services/soa-service-handler/app/pom.xml"
+    },
+    {
+        "name": "service-handler-interfaces",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/core-services/soa-service-handler/interfaces/pom.xml"
+    },
+    {
+        "name": "service-handler-clients",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/core-services/soa-service-handler/clients/pom.xml"
+    },
+    {
+        "name": "soa-service-status-protocol",
+        "group_id": "com.wirelesscar.soa.protocol.servicestatus",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/core-services/soa-service-status-protocol/pom.xml"
+    },
+    {
+        "name": "soa-service-status-server",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/core-services/soa-service-status-server/pom.xml"
+    },
+    {
+        "name": "soa-service-status-server-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/core-services/soa-service-status-server/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-service-status-server-app",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/core-services/soa-service-status-server/app/pom.xml"
+    },
+    {
+        "name": "soa-servicedatacodec-protocol",
+        "group_id": "com.wirelesscar.soa.protocol.servicedata",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/core-services/soa-servicedatacodec-protocol/pom.xml"
+    },
+    {
+        "name": "soa-vehiclestate-protocol",
+        "group_id": "com.wirelesscar.soa.protocol.vehiclestate",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/core-services/soa-vehiclestate-protocol/pom.xml"
+    },
+    {
+        "name": "soa-ts",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/core-services/soa-ts/pom.xml"
+    },
+    {
+        "name": "token-interface",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/core-services/soa-ts/token-interface/pom.xml"
+    },
+    {
+        "name": "soa-ts-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/core-services/soa-ts/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-ts-app",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/core-services/soa-ts/app/pom.xml"
+    },
+    {
+        "name": "soa-servicedatacodec-service",
+        "group_id": "com.wirelesscar.soa.servicedatacodec",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/core-services/soa-servicedatacodec-service/pom.xml"
+    },
+    {
+        "name": "soa-servicedatacodec-service-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/core-services/soa-servicedatacodec-service/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-servicedatacodec-service-codec",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/core-services/soa-servicedatacodec-service/codec/pom.xml"
+    },
+    {
+        "name": "soa-servicedatacodec-service-server",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/core-services/soa-servicedatacodec-service/app/pom.xml"
+    },
+    {
+        "name": "soa-vehiclestate-service",
+        "group_id": "com.wirelesscar.soa.vehiclesettings",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/core-services/soa-vehiclestate-service/pom.xml"
+    },
+    {
+        "name": "soa-vehicle-settings-service",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/core-services/soa-vehiclestate-service/vehicle-settings/pom.xml"
+    },
+    {
+        "name": "soa-event-notifier-protocol",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/core-services/soa-event-notifier-protocol/pom.xml"
+    },
+    {
+        "name": "soa-event-notifier-lambda",
+        "group_id": "com.wirelesscar.soa.eventnotifier",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/core-services/soa-event-notifier-lambda/pom.xml"
+    },
+    {
+        "name": "event-notifier-lambda",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/core-services/soa-event-notifier-lambda/event-notifier-lambda/pom.xml"
+    },
+    {
+        "name": "event-notifier-dlq-lambda",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/core-services/soa-event-notifier-lambda/event-notifier-dlq-lambda/pom.xml"
+    },
+    {
+        "name": "soa-ur",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/masterdata/soa-ur/pom.xml"
+    },
+    {
+        "name": "soa-ur-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/masterdata/soa-ur/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-ur-app",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/masterdata/soa-ur/app/pom.xml"
+    },
+    {
+        "name": "soa-cvs",
+        "group_id": "com.wirelesscar.soa.cvs",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/masterdata/soa-cvs/pom.xml"
+    },
+    {
+        "name": "soa-cvs-if4-web",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/masterdata/soa-cvs/interface4-web/pom.xml"
+    },
+    {
+        "name": "soa-cvs-compat",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/masterdata/soa-cvs/compat/pom.xml"
+    },
+    {
+        "name": "soa-cvs-component-tests",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/masterdata/soa-cvs/component-tests/pom.xml"
+    },
+    {
+        "name": "soa-cvs-persistance",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/masterdata/soa-cvs/persistence/pom.xml"
+    },
+    {
+        "name": "soa-cvs-load-tests",
+        "group_id": "com.wirelesscar.soa.cvs",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/masterdata/soa-cvs/load-tests/pom.xml"
+    },
+    {
+        "name": "soa-cvs-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/masterdata/soa-cvs/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-cvs-converters",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/masterdata/soa-cvs/converters/pom.xml"
+    },
+    {
+        "name": "soa-cvs-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/masterdata/soa-cvs/app/pom.xml"
+    },
+    {
+        "name": "soa-cvs-interfaces",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/masterdata/soa-cvs/interfaces/pom.xml"
+    },
+    {
+        "name": "soa-mno-mock-server",
+        "group_id": "com.wirelesscar.soa.mnomock",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/test/soa-mno-mock-server/pom.xml"
+    },
+    {
+        "name": "soa-mno-mock-server-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/test/soa-mno-mock-server/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-mno-mock-server-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/test/soa-mno-mock-server/app/pom.xml"
+    },
+    {
+        "name": "soa-mno-mock-server-infrastructure",
+        "group_id": "com.wirelesscar.soa",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/test/soa-mno-mock-server/infrastructure/pom.xml"
+    },
+    {
+        "name": "soa-trigger-receiver",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/test/soa-trigger-receiver/pom.xml"
+    },
+    {
+        "name": "soa-trigger-receiver-function",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/test/soa-trigger-receiver/function/pom.xml"
+    },
+    {
+        "name": "soa-generic-automatic-load-tester",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/test/soa-generic-automatic-load-tester/pom.xml"
+    },
+    {
+        "name": "soa-generic-automatic-load-tester-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/test/soa-generic-automatic-load-tester/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-generic-automatic-load-tester-app",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/test/soa-generic-automatic-load-tester/app/pom.xml"
+    },
+    {
+        "name": "soa-vehicle-mock",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/test/soa-vehicle-mock/pom.xml"
+    },
+    {
+        "name": "soa-vehicle-mock-proto",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/test/soa-vehicle-mock/proto/pom.xml"
+    },
+    {
+        "name": "soa-vehicle-mock-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/test/soa-vehicle-mock/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-vehicle-mock-app",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/test/soa-vehicle-mock/app/pom.xml"
+    },
+    {
+        "name": "lfs",
+        "group_id": "com.wirelesscar.soa.lfs",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/lfs/lfs/pom.xml"
+    },
+    {
+        "name": "lfs-uploadcompleted",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/lfs/lfs/lfs-uploadcompleted/pom.xml"
+    },
+    {
+        "name": "lfs-format",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/lfs/lfs/lfs-format/pom.xml"
+    },
+    {
+        "name": "soa-comcheck-server",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/provisioning/soa-comcheck-server/pom.xml"
+    },
+    {
+        "name": "soa-comcheck-server-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/provisioning/soa-comcheck-server/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-comcheck-server-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/provisioning/soa-comcheck-server/app/pom.xml"
+    },
+    {
+        "name": "soa-ddi-kpl-failover-bucket",
+        "group_id": "com.wirelesscar.soa.ddi",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/provisioning/soa-ddi-kpl-failover-bucket/pom.xml"
+    },
+    {
+        "name": "soa-republish-function",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/provisioning/soa-ddi-kpl-failover-bucket/function/pom.xml"
+    },
+    {
+        "name": "soa-provisioning-api",
+        "group_id": "com.wirelesscar.soa.provisioning.api",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/provisioning/soa-provisioning-api/pom.xml"
+    },
+    {
+        "name": "soa-prov-server",
+        "group_id": "com.wirelesscar.soa.prov",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/provisioning/soa-prov-server/pom.xml"
+    },
+    {
+        "name": "soa-prov-server-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/provisioning/soa-prov-server/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-prov-server-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/provisioning/soa-prov-server/app/pom.xml"
+    },
+    {
+        "name": "openapi-spring",
+        "group_id": "org.openapitools",
+        "version": "0.1.2",
+        "base_dir": "../soa-solution/provisioning/soa-prov-server/app/target/generated-sources/openapi/pom.xml"
+    },
+    {
+        "name": "soa-kddi-proxy",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/provisioning/soa-kddi-proxy/pom.xml"
+    },
+    {
+        "name": "soa-kddi-proxy-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/provisioning/soa-kddi-proxy/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "kddi-proxy-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/provisioning/soa-kddi-proxy/app/pom.xml"
+    },
+    {
+        "name": "soa-provisioning-state-publisher",
+        "group_id": "com.wirelesscar.soa.psp",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/provisioning/soa-provisioning-state-publisher/pom.xml"
+    },
+    {
+        "name": "provisioning-state-publisher",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/provisioning/soa-provisioning-state-publisher/provisioning-state-publisher/pom.xml"
+    },
+    {
+        "name": "soa-provisioning-configuration-provider",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/provisioning/soa-provisioning-configuration-provider/pom.xml"
+    },
+    {
+        "name": "soa-provisioning-configuration-provider-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/provisioning/soa-provisioning-configuration-provider/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-provisioning-configuration-provider-protocol",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/provisioning/soa-provisioning-configuration-provider/protocol/pom.xml"
+    },
+    {
+        "name": "soa-provisioning-configuration-provider-app",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/provisioning/soa-provisioning-configuration-provider/app/pom.xml"
+    },
+    {
+        "name": "soa-data-delivery-stream-distributor",
+        "group_id": "com.wirelesscar.soa.ddi",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-data-delivery-stream-distributor/pom.xml"
+    },
+    {
+        "name": "distributor",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-data-delivery-stream-distributor/distributor/pom.xml"
+    },
+    {
+        "name": "soa-ddi-receiver",
+        "group_id": "com.wirelesscar.soaddire",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-ddi-receiver/pom.xml"
+    },
+    {
+        "name": "search-index",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-ddi-receiver/search-index/pom.xml"
+    },
+    {
+        "name": "transactionid-republisher",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-ddi-receiver/transactionid-republisher/pom.xml"
+    },
+    {
+        "name": "eventid-republisher",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-ddi-receiver/eventid-republisher/pom.xml"
+    },
+    {
+        "name": "ddirec-util",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/ddi/soa-ddi-receiver/ddirec-util/pom.xml"
+    },
+    {
+        "name": "trigger-receiver",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-ddi-receiver/trigger-receiver/pom.xml"
+    },
+    {
+        "name": "s3-consumer",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-ddi-receiver/s3-consumer/pom.xml"
+    },
+    {
+        "name": "soa-datadelivery-schemas-legacy",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-datadelivery-schemas-legacy/pom.xml"
+    },
+    {
+        "name": "soa-ddi-dynamo",
+        "group_id": "com.wirelesscar.soa.ddi",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-ddi-dynamo/pom.xml"
+    },
+    {
+        "name": "persistence",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-ddi-dynamo/persistence/pom.xml"
+    },
+    {
+        "name": "util",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-ddi-dynamo/util/pom.xml"
+    },
+    {
+        "name": "soa-ddi-kpl-failover-bucket",
+        "group_id": "com.wirelesscar.soa.ddi",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-ddi-kpl-failover-bucket/pom.xml"
+    },
+    {
+        "name": "soa-republish-function",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-ddi-kpl-failover-bucket/function/pom.xml"
+    },
+    {
+        "name": "soa-data-delivery-test-bot",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-data-delivery-test-bot/pom.xml"
+    },
+    {
+        "name": "soa-data-delivery-test-bot-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/ddi/soa-data-delivery-test-bot/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-data-delivery-test-bot-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/ddi/soa-data-delivery-test-bot/app/pom.xml"
+    },
+    {
+        "name": "soa-data-delivery-transformer",
+        "group_id": "com.wirelesscar.soa.ddi",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-data-delivery-transformer/pom.xml"
+    },
+    {
+        "name": "transformerdlq",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/ddi/soa-data-delivery-transformer/transformerdlq/pom.xml"
+    },
+    {
+        "name": "transformer",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-data-delivery-transformer/transformer/pom.xml"
+    },
+    {
+        "name": "soa-data-delivery-prov-com-firehose-transformer-lambda",
+        "group_id": "com.wirelesscar.soa.ddi",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-data-delivery-prov-com-firehose-transformer-lambda/pom.xml"
+    },
+    {
+        "name": "record-filter",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-data-delivery-prov-com-firehose-transformer-lambda/record-filter/pom.xml"
+    },
+    {
+        "name": "soa-data-delivery-source-firehose-transformer-lambda",
+        "group_id": "com.wirelesscar.soa.ddi",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-data-delivery-source-firehose-transformer-lambda/pom.xml"
+    },
+    {
+        "name": "position-enricher",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-data-delivery-source-firehose-transformer-lambda/position-enricher/pom.xml"
+    },
+    {
+        "name": "soa-datadelivery-schemas-parent",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-datadelivery-schemas/pom.xml"
+    },
+    {
+        "name": "soa-datadelivery-schemas-json",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-datadelivery-schemas/json/pom.xml"
+    },
+    {
+        "name": "soa-datadelivery-schemas",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-datadelivery-schemas/xml/pom.xml"
+    },
+    {
+        "name": "soa-data-delivery-distributor-retry",
+        "group_id": "com.wirelesscar.soa.ddi",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-data-delivery-distributor-retry/pom.xml"
+    },
+    {
+        "name": "messagereceiverdlq",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/ddi/soa-data-delivery-distributor-retry/messagereceiverdlq/pom.xml"
+    },
+    {
+        "name": "messagereceiver",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-data-delivery-distributor-retry/messagereceiver/pom.xml"
+    },
+    {
+        "name": "soa-datadelivery-messageformat",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-datadelivery-messageformat/pom.xml"
+    },
+    {
+        "name": "soa-data-delivery-transformer-lib",
+        "group_id": "com.wirelesscar.soa.ddi",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-data-delivery-transformer-lib/pom.xml"
+    },
+    {
+        "name": "soa-data-delivery-transformer-lib-provider",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/ddi/soa-data-delivery-transformer-lib/provider/pom.xml"
+    },
+    {
+        "name": "soa-data-delivery-transformer-lib-common",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/ddi/soa-data-delivery-transformer-lib/common/pom.xml"
+    },
+    {
+        "name": "soa-data-delivery-transformer-lib-v2",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/ddi/soa-data-delivery-transformer-lib/v2/pom.xml"
+    },
+    {
+        "name": "soa-data-delivery-publisher-server",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-data-delivery-publisher-server/pom.xml"
+    },
+    {
+        "name": "soa-data-delivery-publisher-server-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/ddi/soa-data-delivery-publisher-server/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-data-delivery-publisher-server-app",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-data-delivery-publisher-server/app/pom.xml"
+    },
+    {
+        "name": "soa-ddi-receiver-s3-publisher",
+        "group_id": "com.wirelesscar.soa.ddi",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/ddi/soa-ddi-receiver-s3-publisher/pom.xml"
+    },
+    {
+        "name": "s3publisher",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/ddi/soa-ddi-receiver-s3-publisher/s3publisher/pom.xml"
+    },
+    {
+        "name": "soa-sla-reporting-service",
+        "group_id": "com.wirelesscar.soa.sla",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/sla/soa-sla-reporting-service/pom.xml"
+    },
+    {
+        "name": "sla-function",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/sla/soa-sla-reporting-service/sla-function/pom.xml"
+    },
+    {
+        "name": "soa-sla-reporting-model",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/sla/soa-sla-reporting-model/pom.xml"
+    },
+    {
+        "name": "soa-support-server",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/support/soa-support-server/pom.xml"
+    },
+    {
+        "name": "soa-support-server-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/support/soa-support-server/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-support-server-app",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/support/soa-support-server/app/pom.xml"
+    },
+    {
+        "name": "soa-prov-config-loader-lambda",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/config/soa-prov-config-loader-lambda/pom.xml"
+    },
+    {
+        "name": "soa-prov-config-loader-lambda-function",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/config/soa-prov-config-loader-lambda/function/pom.xml"
+    },
+    {
+        "name": "soa-routing-config-loader-lambda",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/config/soa-routing-config-loader-lambda/pom.xml"
+    },
+    {
+        "name": "soa-routing-config-loader-lambda-function",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/config/soa-routing-config-loader-lambda/function/pom.xml"
+    },
+    {
+        "name": "soa-routing-config-loader-lambda-mrip-function",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/config/soa-routing-config-loader-lambda/mrip-function/pom.xml"
+    },
+    {
+        "name": "soa-remote-service-gateway",
+        "group_id": "com.wirelesscar.soa.rsgw",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/gateways/soa-remote-service-gateway/pom.xml"
+    },
+    {
+        "name": "soa-remote-service-gateway-model",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-remote-service-gateway/model/pom.xml"
+    },
+    {
+        "name": "soa-remote-service-gateway-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-remote-service-gateway/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-remote-service-gateway-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-remote-service-gateway/app/pom.xml"
+    },
+    {
+        "name": "soa-remote-service-gateway-customer-api",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/gateways/soa-remote-service-gateway/customer-api/pom.xml"
+    },
+    {
+        "name": "soa-provisioning-gateway-server",
+        "group_id": "com.wirelesscar.soa.prov",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/gateways/soa-provisioning-gateway-server/pom.xml"
+    },
+    {
+        "name": "soa-provisioning-gateway-server-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-provisioning-gateway-server/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-provisioning-gateway-server-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-provisioning-gateway-server/app/pom.xml"
+    },
+    {
+        "name": "soa-provisioning-gateway-api",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-provisioning-gateway-server/api/pom.xml"
+    },
+    {
+        "name": "soa-provisioning-att-gateway-server",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/gateways/soa-provisioning-att-gateway-server/pom.xml"
+    },
+    {
+        "name": "soa-provisioning-att-gateway-server-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-provisioning-att-gateway-server/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-provisioning-att-gateway-server-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-provisioning-att-gateway-server/app/pom.xml"
+    },
+    {
+        "name": "soa-provisioning-att-gateway-api",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-provisioning-att-gateway-server/api/pom.xml"
+    },
+    {
+        "name": "soa-provisioning-mdi-gateway-server",
+        "group_id": "com.wirelesscar.spmg",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/gateways/soa-provisioning-mdi-gateway-server/pom.xml"
+    },
+    {
+        "name": "soa-provisioning-mdi-gateway-server-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-provisioning-mdi-gateway-server/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "protocol",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-provisioning-mdi-gateway-server/protocol/pom.xml"
+    },
+    {
+        "name": "soa-provisioning-mdi-gateway-server-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-provisioning-mdi-gateway-server/app/pom.xml"
+    },
+    {
+        "name": "soa-itr-gateway-server",
+        "group_id": "com.wirelesscar.itr.gateway",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/gateways/soa-itr-gateway-server/pom.xml"
+    },
+    {
+        "name": "soa-itr-gateway-server-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-itr-gateway-server/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-itr-gateway-server-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-itr-gateway-server/app/pom.xml"
+    },
+    {
+        "name": "api",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-itr-gateway-server/api/pom.xml"
+    },
+    {
+        "name": "soa-drf-gateway-server",
+        "group_id": "com.wirelesscar.drfgw",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/gateways/soa-drf-gateway-server/pom.xml"
+    },
+    {
+        "name": "soa-drf-gateway-server-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-drf-gateway-server/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "protocol",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-drf-gateway-server/protocol/pom.xml"
+    },
+    {
+        "name": "soa-drf-gateway-server-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-drf-gateway-server/app/pom.xml"
+    },
+    {
+        "name": "soa-sas-gateway-server",
+        "group_id": "com.wirelesscar.soa.sas.gateway",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/gateways/soa-sas-gateway-server/pom.xml"
+    },
+    {
+        "name": "soa-sas-gateway-server-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-sas-gateway-server/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-sas-gateway-server-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-sas-gateway-server/app/pom.xml"
+    },
+    {
+        "name": "soa-fota-gateway-server",
+        "group_id": "com.wirelesscar.soa.fotagw",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/gateways/soa-fota-gateway-server/pom.xml"
+    },
+    {
+        "name": "soa-fota-gateway-server-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-fota-gateway-server/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-fota-gateway-server-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-fota-gateway-server/app/pom.xml"
+    },
+    {
+        "name": "soa-fota-gateway-server-api",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/gateways/soa-fota-gateway-server/api/pom.xml"
+    },
+    {
+        "name": null,
+        "group_id": null,
+        "version": null,
+        "base_dir": "../soa-solution/generators/yeoman-generator-soa-lib/generators/app/templates/pom.xml"
+    },
+    {
+        "name": null,
+        "group_id": null,
+        "version": null,
+        "base_dir": "../soa-solution/generators/yeoman-generator-soa-server/generators/app/templates/pom.xml"
+    },
+    {
+        "name": null,
+        "group_id": null,
+        "version": null,
+        "base_dir": "../soa-solution/generators/yeoman-generator-soa-server/generators/app/templates/deployable-assembly/pom.xml"
+    },
+    {
+        "name": null,
+        "group_id": null,
+        "version": null,
+        "base_dir": "../soa-solution/generators/yeoman-generator-soa-server/generators/app/templates/app/pom.xml"
+    },
+    {
+        "name": "soa-fota-server",
+        "group_id": "com.wirelesscar.soa.ota",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-fota-server/pom.xml"
+    },
+    {
+        "name": "soa-fota-server-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-fota-server/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-fota-server-protocol",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-fota-server/protocol/pom.xml"
+    },
+    {
+        "name": "soa-fota-server-app",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-fota-server/app/pom.xml"
+    },
+    {
+        "name": "soa-oem-service",
+        "group_id": "com.wirelesscar.soa.oem",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-oem-service/pom.xml"
+    },
+    {
+        "name": "soa-oem-service-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-oem-service/app/pom.xml"
+    },
+    {
+        "name": "openapi-spring",
+        "group_id": "org.openapitools",
+        "version": "1.0.0",
+        "base_dir": "../soa-solution/services/soa-oem-service/app/target/generated-sources/openapi/pom.xml"
+    },
+    {
+        "name": "soa-drf-server",
+        "group_id": "com.wirelesscar.drf",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-drf-server/pom.xml"
+    },
+    {
+        "name": "soa-drf-server-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-drf-server/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-drf-server-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-drf-server/app/pom.xml"
+    },
+    {
+        "name": "soa-drf-api",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-drf-server/api/pom.xml"
+    },
+    {
+        "name": "soa-rbc",
+        "group_id": "com.wirelesscar.soa.rbc",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-rbc/pom.xml"
+    },
+    {
+        "name": "soa-rbc-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-rbc/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-rbc-protocol",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-rbc/protocol/pom.xml"
+    },
+    {
+        "name": "soa-rbc-app",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-rbc/app/pom.xml"
+    },
+    {
+        "name": "soa-sas-server",
+        "group_id": "com.wirelesscar.soa.sas",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-sas-server/pom.xml"
+    },
+    {
+        "name": "soa-sas-server-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-sas-server/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-sas-server-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-sas-server/app/pom.xml"
+    },
+    {
+        "name": "soa-si",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-si/pom.xml"
+    },
+    {
+        "name": "service-integrator-core",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-si/service-integrator-core/pom.xml"
+    },
+    {
+        "name": "interface-trigger-web",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-si/interface-trigger-web/pom.xml"
+    },
+    {
+        "name": "soa-si-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-si/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "subaru-services",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-si/subaru-services/pom.xml"
+    },
+    {
+        "name": "soa-si-app",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-si/app/pom.xml"
+    },
+    {
+        "name": "interface8-web",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-si/interface8-web/pom.xml"
+    },
+    {
+        "name": "service-integrator-interfaces",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-si/service-integrator-interfaces/pom.xml"
+    },
+    {
+        "name": "ngtp-common-compat",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-si/ngtp-common-compat/pom.xml"
+    },
+    {
+        "name": "service-integrator-web",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-si/service-integrator-web/pom.xml"
+    },
+    {
+        "name": "service-integrator-persistance",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-si/service-integrator-persistance/pom.xml"
+    },
+    {
+        "name": "clients",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-si/clients/pom.xml"
+    },
+    {
+        "name": "soa-val-server",
+        "group_id": "com.wirelesscar.soa.val",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-val-server/pom.xml"
+    },
+    {
+        "name": "soa-val-server-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-val-server/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-val-server-app",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-val-server/app/pom.xml"
+    },
+    {
+        "name": "soa-val-server-api",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-val-server/api/pom.xml"
+    },
+    {
+        "name": "soa-service-engine-server",
+        "group_id": "com.wirelesscar.soa.ses",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-service-engine-server/pom.xml"
+    },
+    {
+        "name": "soa-service-engine-server-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-service-engine-server/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-service-engine-server-protocol",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-service-engine-server/protocol/pom.xml"
+    },
+    {
+        "name": "soa-service-engine-server-app",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-service-engine-server/app/pom.xml"
+    },
+    {
+        "name": "soa-ccc-server",
+        "group_id": "com.wirelesscar.soa.ccc",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-ccc-server/pom.xml"
+    },
+    {
+        "name": "soa-ccc-server-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-ccc-server/app/pom.xml"
+    },
+    {
+        "name": "openapi-spring",
+        "group_id": "org.openapitools",
+        "version": "0.0.1",
+        "base_dir": "../soa-solution/services/soa-ccc-server/app/target/generated-sources/openapi/pom.xml"
+    },
+    {
+        "name": "soa-vhs-server",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-vhs-server/pom.xml"
+    },
+    {
+        "name": "soa-vhs-server-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-vhs-server/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-vhs-server-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-vhs-server/app/pom.xml"
+    },
+    {
+        "name": "soa-hblfstop-server",
+        "group_id": "com.wirelesscar.soa.hblfstop",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-hblfstop-server/pom.xml"
+    },
+    {
+        "name": "soa-hblfstop-server-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-hblfstop-server/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-hblfstop-server-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-hblfstop-server/app/pom.xml"
+    },
+    {
+        "name": "soa-triplog-server",
+        "group_id": "com.wirelesscar.soa.triplog",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-triplog-server/pom.xml"
+    },
+    {
+        "name": "soa-triplog-server-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/services/soa-triplog-server/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "generated-pajas-api",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-triplog-server/generated-pajas-api/pom.xml"
+    },
+    {
+        "name": "soa-triplog-server-app",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-triplog-server/app/pom.xml"
+    },
+    {
+        "name": "generated-customer-trip-api",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/services/soa-triplog-server/generated-customer-trip-api/pom.xml"
+    },
+    {
+        "name": "soa-data-delivery-dlq-republisher",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/misc/soa-data-delivery-dlq-republisher/pom.xml"
+    },
+    {
+        "name": "soa-data-delivery-dlq-republisher-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/misc/soa-data-delivery-dlq-republisher/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-data-delivery-dlq-republisher-app",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/misc/soa-data-delivery-dlq-republisher/app/pom.xml"
+    },
+    {
+        "name": "soa-good-repeating-instruction-sender",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/misc/soa-good-repeating-instruction-sender/pom.xml"
+    },
+    {
+        "name": "soa-good-repeating-instruction-sender-app",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/misc/soa-good-repeating-instruction-sender/app/pom.xml"
+    },
+    {
+        "name": "soa-scheduler-service",
+        "group_id": "com.wirelesscar.soa.scheduler.service",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/scheduler/soa-scheduler-service/pom.xml"
+    },
+    {
+        "name": "event-scheduler",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/scheduler/soa-scheduler-service/event-scheduler/pom.xml"
+    },
+    {
+        "name": "status-publisher",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/scheduler/soa-scheduler-service/status-publisher/pom.xml"
+    },
+    {
+        "name": "component-event-publisher",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/scheduler/soa-scheduler-service/component-event-publisher/pom.xml"
+    },
+    {
+        "name": "scheduler-service-model",
+        "group_id": "com.wirelesscar.soa.scheduler.service",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/scheduler/scheduler-service-model/pom.xml"
+    },
+    {
+        "name": "soa-scheduler-test-bot",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/scheduler/soa-scheduler-test-bot/pom.xml"
+    },
+    {
+        "name": "soa-scheduler-test-bot-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/scheduler/soa-scheduler-test-bot/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "soa-scheduler-test-bot-app",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/scheduler/soa-scheduler-test-bot/app/pom.xml"
+    },
+    {
+        "name": "soa-scheduler-messageformat",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/scheduler/soa-scheduler-messageformat/pom.xml"
+    },
+    {
+        "name": "scheduled-events-processor",
+        "group_id": "com.wirelesscar.soa.scheduler.service",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/scheduler/scheduled-events-processor/pom.xml"
+    },
+    {
+        "name": "scheduled-events-processor-deployable",
+        "group_id": "com.wirelesscar.ngtp.cd.assemblies",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/scheduler/scheduled-events-processor/deployable-assembly/pom.xml"
+    },
+    {
+        "name": "scheduled-events-processor-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/scheduler/scheduled-events-processor/app/pom.xml"
+    },
+    {
+        "name": "soa-ccs-api-gateway",
+        "group_id": "com.wirelesscar.soa.ccsapigateway",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/api/soa-ccs-api-gateway/pom.xml"
+    },
+    {
+        "name": "soa-customer-api",
+        "group_id": "com.wirelesscar.soa.api",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/api/soa-customer-api/pom.xml"
+    },
+    {
+        "name": "soa-sas-api",
+        "group_id": "com.wirelesscar.soa.sas",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/api/soa-sas-api/pom.xml"
+    },
+    {
+        "name": "soa-sas-api-app",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/api/soa-sas-api/app/pom.xml"
+    },
+    {
+        "name": "openapi-spring",
+        "group_id": "org.openapitools",
+        "version": "0.1.1",
+        "base_dir": "../soa-solution/api/soa-sas-api/app/target/generated-sources/openapi/pom.xml"
+    },
+    {
+        "name": "soa-oem-api-gateway",
+        "group_id": "com.wirelesscar.soa.oem",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/api/soa-oem-api-gateway/pom.xml"
+    },
+    {
+        "name": "oem-api-function",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/api/soa-oem-api-gateway/oem-api/pom.xml"
+    },
+    {
+        "name": "soa-internal-api",
+        "group_id": "com.wirelesscar.soa.internal.api",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/api/soa-internal-api/pom.xml"
+    },
+    {
+        "name": "soa-triplog-api",
+        "group_id": "com.wirelesscar.soa.triplog",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/api/soa-triplog-api/pom.xml"
+    },
+    {
+        "name": "soa-get-trip-function",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/api/soa-triplog-api/gettrip/pom.xml"
+    },
+    {
+        "name": "soacaa",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/monitoring/soa-cw-asg-alarms/pom.xml"
+    },
+    {
+        "name": "soacaa-function",
+        "group_id": "Unknown",
+        "version": "Unknown",
+        "base_dir": "../soa-solution/monitoring/soa-cw-asg-alarms/soacaa-function/pom.xml"
+    },
+    {
+        "name": "soa-active-vehicles-service",
+        "group_id": "com.wirelesscar.soa.soaavs",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/monitoring/soa-active-vehicles-service/pom.xml"
+    },
+    {
+        "name": "active-vehicles",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/monitoring/soa-active-vehicles-service/active-vehicles/pom.xml"
+    },
+    {
+        "name": "soa-if1-log-lambda",
+        "group_id": "com.wirelesscar.soa",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/monitoring/soa-if1-log-lambda/pom.xml"
+    },
+    {
+        "name": "soa-if1-log-lambda-function",
+        "group_id": "Unknown",
+        "version": "0-SNAPSHOT",
+        "base_dir": "../soa-solution/monitoring/soa-if1-log-lambda/function/pom.xml"
+    }
+]
