@@ -6,10 +6,13 @@ const { spawn } = require('child_process');
 
 app.use(cors())
 const parser = require('body-parser');
-const urlencodedParser = parser.urlencoded({extended : false});
+const urlencodedParser = parser.urlencoded({ extended: false });
 // before your routes
-app.use(parser .json());
+app.use(parser.json());
 app.use(urlencodedParser)
+
+// progress tracking variable
+let analysisProgress = 0;
 
 app.get("/", (req, res) => {
     res.json({
@@ -25,21 +28,21 @@ app.get("/", (req, res) => {
 
 app.get("/data", (req, res) => {
     const itemsfile = require("../data/component.json");
-    let result = [{"Message": "Data loading..."}];
+    let result = [{ "Message": "Data loading..." }];
 
     maxQueryParam = Object.keys(req.query).length;
 
     switch (maxQueryParam) {
         case 1:
             if (req.query.keyword) {
-                console.log("Searching for dependency containing: "+req.query.keyword+" in the data.");
+                console.log("Searching for dependency containing: " + req.query.keyword + " in the data.");
 
-                result = itemsfile.filter(item => 
+                result = itemsfile.filter(item =>
                     item.base_dir.includes(req.query.keyword));
-                
-            } 
+
+            }
             break;
-    
+
         default:
             console.log("Fetching all data")
             result = itemsfile
@@ -57,8 +60,9 @@ app.put('/analyze', async (req, res) => {
 
     // Run Python script and track output
     const process = spawn('python3', ['../client/dep_analyze.py', JSON.stringify(selectedDocs)]);
-    
+
     process.stdout.on('data', (data) => {
+        analysisProgress += 10;  // Update as needed based on output from the script
         // Send progress to the client, e.g., via WebSocket, or save to a file/DB the client can poll
         console.log(`Progress: ${data}`);
     });
@@ -68,14 +72,20 @@ app.put('/analyze', async (req, res) => {
     });
 
     process.on('close', (code) => {
+        analysisProgress = 100;  // Complete progress on script close
         console.log(`Script completed with code ${code}`);
         res.json({ message: "Analysis complete" });
     });
 });
 
+// Add progress endpoint
+app.get('/progress', (req, res) => {
+    res.json({ progress: analysisProgress });
+});
+
 app.get("/componentinfo", (req, res) => {
     const keyfile = require("../data/key.json");
-    let result = [{"Message": "Data loading..."}];
+    let result = [{ "Message": "Data loading..." }];
 
     console.log("Fetching the component's info")
     result = keyfile
@@ -84,7 +94,7 @@ app.get("/componentinfo", (req, res) => {
 
 app.get("/graph/:type?", (req, res) => {
     const itemsfile = require("../data/data.json");
-    let result = [{"Message": "Data loading..."}];
+    let result = [{ "Message": "Data loading..." }];
 
     // Check if type is 'basedir' or undefined
     if (req.params.type === "basedir") {
@@ -96,9 +106,9 @@ app.get("/graph/:type?", (req, res) => {
             const shortBaseDir = baseDirParts.slice(-2).join("/");
 
             // Return the short base_dir as "1", "2", etc.
-            return { 
+            return {
                 dependency: shortBaseDir,
-                used: item.maven_analyse_used 
+                used: item.maven_analyse_used
             };
         });
     } else {
