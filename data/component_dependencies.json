@@ -1,208 +1,108 @@
 {
-    "soa-scheduler-messageformat": [
+    "soa-servicedata-codec": [
         {
-            "base_dir": "../../soa-solution/core-services/soa-vehicle-uplink-stateless-service",
+            "base_dir": "../../soa-solution/lib/soa-utils/sd-decoder",
             "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
+            "artifact_id": "decoder-util",
+            "target_version": "${soa-servicedata-codec.version}",
             "maven_analyse_used": false
         },
         {
-            "base_dir": "../../soa-solution/core-services/soa-vehicle-uplink-stateless-service/app",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
+            "base_dir": "../../soa-solution/lib/soa-utils/parseDsptMsg",
+            "group_id": "com.wirelesscar.tsdp.helful-tools.jruby",
+            "artifact_id": "tsdp-parse-msg-tool",
+            "target_version": "42",
             "maven_analyse_used": false
         },
         {
-            "base_dir": "../../soa-solution/provisioning/soa-comcheck-server",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
+            "base_dir": "../../soa-solution/lib/soa-utils/tsdp-decoder-soa",
+            "group_id": "com.wirelesscar.tsdp.protocol",
+            "artifact_id": "message-decoder",
+            "target_version": "${soa-servicedata-codec.version}",
             "maven_analyse_used": false
         },
         {
-            "base_dir": "../../soa-solution/provisioning/soa-comcheck-server/app",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
+            "base_dir": "../../soa-solution/core-services/soa-service-handler",
+            "group_id": "com.wirelesscar.soa.sh",
+            "artifact_id": "soa-service-handler",
+            "target_version": "${ngtp.codec.soa.version}",
             "maven_analyse_used": false
         },
         {
-            "base_dir": "../../soa-solution/provisioning/soa-prov-server",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
+            "base_dir": "../../soa-solution/core-services/soa-service-handler/protocol/soa",
+            "group_id": "com.wirelesscar.tsdp.sh.protocol",
+            "artifact_id": "service-handler-protocol-soa",
+            "target_version": "unknown",
             "maven_analyse_used": false
         },
         {
-            "base_dir": "../../soa-solution/provisioning/soa-prov-server/app",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
+            "base_dir": "../../soa-solution/core-services/soa-servicedatacodec-service",
+            "group_id": "com.wirelesscar.soa.servicedatacodec",
+            "artifact_id": "soa-servicedatacodec-service",
+            "target_version": "${soa-asn1-codec.version}",
             "maven_analyse_used": false
         },
         {
-            "base_dir": "../../soa-solution/ddi/soa-data-delivery-publisher-server",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
+            "base_dir": "../../soa-solution/core-services/soa-servicedatacodec-service/codec",
+            "group_id": "com.wirelesscar.soa.servicedatacodec",
+            "artifact_id": "soa-servicedatacodec-service-codec",
+            "target_version": "unknown",
             "maven_analyse_used": false
         },
         {
-            "base_dir": "../../soa-solution/ddi/soa-data-delivery-publisher-server/app",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
+            "base_dir": "../../soa-solution/core-services/soa-servicedatacodec-service/app",
+            "group_id": "com.wirelesscar.soa.servicedatacodec",
+            "artifact_id": "soa-servicedatacodec-service-server",
+            "target_version": "unknown",
             "maven_analyse_used": false
-        },
-        {
-            "base_dir": "../../soa-solution/services/soa-fota-server",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
-            "maven_analyse_used": true
-        },
-        {
-            "base_dir": "../../soa-solution/services/soa-fota-server/app",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
-            "maven_analyse_used": false
-        },
-        {
-            "base_dir": "../../soa-solution/services/soa-oem-service/app",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
-            "maven_analyse_used": false
-        },
-        {
-            "base_dir": "../../soa-solution/services/soa-drf-server",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
-            "maven_analyse_used": true
-        },
-        {
-            "base_dir": "../../soa-solution/services/soa-drf-server/app",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
-            "maven_analyse_used": false
-        },
+        }
+    ],
+    "soa-starter-scheduling": [
         {
             "base_dir": "../../soa-solution/services/soa-rbc",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
+            "group_id": "com.wirelesscar.soa.rbc",
+            "artifact_id": "soa-rbc",
+            "target_version": "${soa-starter-scheduling.version}",
             "maven_analyse_used": false
         },
         {
             "base_dir": "../../soa-solution/services/soa-rbc/app",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
+            "group_id": "com.wirelesscar.soa.rbc",
+            "artifact_id": "soa-rbc-app",
+            "target_version": "unknown",
             "maven_analyse_used": false
         },
         {
-            "base_dir": "../../soa-solution/services/soa-sas-server",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
+            "base_dir": "../../soa-solution/services/soa-ccc-server",
+            "group_id": "com.wirelesscar.soa.ccc",
+            "artifact_id": "soa-ccc-server",
+            "target_version": "${soa-starter-scheduling.version}",
             "maven_analyse_used": false
         },
         {
-            "base_dir": "../../soa-solution/services/soa-sas-server/app",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
+            "base_dir": "../../soa-solution/services/soa-ccc-server/app",
+            "group_id": "com.wirelesscar.soa.ccc",
+            "artifact_id": "soa-ccc-server-app",
+            "target_version": "unknown",
             "maven_analyse_used": false
         },
         {
-            "base_dir": "../../soa-solution/services/soa-si",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
+            "base_dir": "../../soa-solution/scheduler/scheduled-events-processor",
+            "group_id": "com.wirelesscar.soa.scheduler.service",
+            "artifact_id": "scheduled-events-processor",
+            "target_version": "${soa-starter-scheduling.version}",
             "maven_analyse_used": false
         },
         {
-            "base_dir": "../../soa-solution/services/soa-si/service-integrator-core",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
-            "maven_analyse_used": false
-        },
-        {
-            "base_dir": "../../soa-solution/services/soa-val-server",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
-            "maven_analyse_used": true
-        },
-        {
-            "base_dir": "../../soa-solution/services/soa-val-server/app",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
-            "maven_analyse_used": false
-        },
-        {
-            "base_dir": "../../soa-solution/services/soa-service-engine-server",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
-            "maven_analyse_used": false
-        },
-        {
-            "base_dir": "../../soa-solution/services/soa-service-engine-server/app",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
-            "maven_analyse_used": false
-        },
-        {
-            "base_dir": "../../soa-solution/services/soa-vhs-server",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
-            "maven_analyse_used": false
-        },
-        {
-            "base_dir": "../../soa-solution/services/soa-vhs-server/app",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
-            "maven_analyse_used": false
-        },
-        {
-            "base_dir": "../../soa-solution/services/soa-triplog-server",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
-            "maven_analyse_used": false
-        },
-        {
-            "base_dir": "../../soa-solution/services/soa-triplog-server/app",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
-            "maven_analyse_used": false
-        },
-        {
-            "base_dir": "../../soa-solution/scheduler/soa-scheduler-service",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
-            "maven_analyse_used": false
-        },
-        {
-            "base_dir": "../../soa-solution/scheduler/soa-scheduler-service/event-scheduler",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
-            "maven_analyse_used": false
-        },
-        {
-            "base_dir": "../../soa-solution/scheduler/soa-scheduler-service/component-event-publisher",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
-            "maven_analyse_used": false
-        },
-        {
-            "base_dir": "../../soa-solution/scheduler/soa-scheduler-test-bot",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
-            "maven_analyse_used": false
-        },
-        {
-            "base_dir": "../../soa-solution/scheduler/soa-scheduler-test-bot/app",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
-            "maven_analyse_used": false
-        },
-        {
-            "base_dir": "../../soa-solution/api/soa-sas-api",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
-            "maven_analyse_used": false
-        },
-        {
-            "base_dir": "../../soa-solution/api/soa-sas-api/app",
-            "group_id": "com.wirelesscar.soa",
-            "artifact_id": "soa-scheduler-messageformat",
+            "base_dir": "../../soa-solution/scheduler/scheduled-events-processor/app",
+            "group_id": "com.wirelesscar.soa.scheduler.service",
+            "artifact_id": "scheduled-events-processor-app",
+            "target_version": "unknown",
             "maven_analyse_used": false
         }
-    ]
+    ],
+    "ProvisioningTool": [],
+    "tldToKml": [],
+    "decoder-util": [],
+    "tsdp-parse-msg-tool": []
 }

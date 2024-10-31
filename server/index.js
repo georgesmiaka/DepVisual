@@ -1,28 +1,33 @@
 const express = require("express");
-var cors = require('cors')
+const cors = require('cors');
 const app = express();
-const port = 1337;
+const http = require('http');
 const { spawn } = require('child_process');
-
-app.use(cors())
+const WebSocket = require('ws');
 const parser = require('body-parser');
-const urlencodedParser = parser.urlencoded({ extended: false });
-// before your routes
-app.use(parser.json());
-app.use(urlencodedParser)
 
-// progress tracking variable
+const port = 1337;
+
+// WebSocket server setup
+const server = http.createServer(app);
+const wss = new WebSocket.Server({ server });
+
+// Middlewares
+app.use(cors());
+app.use(parser.json());
+app.use(parser.urlencoded({ extended: false }));
+
+// Tracking analysis progress
 let analysisProgress = 0;
 
+// Serve the routes as usual
 app.get("/", (req, res) => {
     res.json({
         "/": "Shows a list of all possible routes that are used.",
-        "/data": "Shows a list of all possible components", //"Shows a list of all possible dependent components.",
+        "/data": "Shows a list of all possible components", 
         "/data?keyword=keyword": "Shows components that contain the specific keyword.",
         "/analyze": "Endpoint that receives the list of components being analyzed.",
-        "/componentinfo": "Shows information about the component being analyzed.",
-        "/graph": "Shows a list of all filtered dependent components.",
-        "/graph/basedir": "Shows only the root directory of all filtered dependent components.",
+        "/dependency": "Shows a list of the components being analyzed together with their dependencies.",
     });
 });
 
@@ -35,7 +40,7 @@ app.get("/data", (req, res) => {
     switch (maxQueryParam) {
         case 1:
             if (req.query.keyword) {
-                console.log("Searching for dependency containing: " + req.query.keyword + " in the data.");
+                console.log("Searching for dependency containing '" + req.query.keyword + "' in the data.");
 
                 result = itemsfile.filter(item =>
                     item.base_dir.includes(req.query.keyword));
@@ -44,7 +49,7 @@ app.get("/data", (req, res) => {
             break;
 
         default:
-            console.log("Fetching all data")
+            console.log("Fetching the list of all components")
             result = itemsfile
             break;
     }
@@ -53,18 +58,18 @@ app.get("/data", (req, res) => {
 
 app.put('/analyze', async (req, res) => {
     const selectedDocs = req.body;
-
     if (!selectedDocs || selectedDocs.length === 0) {
         return res.status(400).send("No documents selected for analysis.");
     }
-
-    // Run Python script and track output
+    analysisProgress = 0;
+    // Run the Python analysis script
     const process = spawn('python3', ['../client/dep_analyze.py', JSON.stringify(selectedDocs)]);
 
     process.stdout.on('data', (data) => {
-        analysisProgress += 10;  // Update as needed based on output from the script
-        // Send progress to the client, e.g., via WebSocket, or save to a file/DB the client can poll
+        analysisProgress += 1;  // Adjust as needed based on actual progress updates
+        broadcastProgress(analysisProgress);  // Send updates to all WebSocket clients
         console.log(`Progress: ${data}`);
+        console.log(`progress_status: ${analysisProgress}`)
     });
 
     process.stderr.on('data', (data) => {
@@ -72,53 +77,27 @@ app.put('/analyze', async (req, res) => {
     });
 
     process.on('close', (code) => {
-        analysisProgress = 100;  // Complete progress on script close
+        analysisProgress = 100;  // Mark completion
+        broadcastProgress(analysisProgress);  // Final update
         console.log(`Script completed with code ${code}`);
         res.json({ message: "Analysis complete" });
     });
 });
 
-// Add progress endpoint
-app.get('/progress', (req, res) => {
-    res.json({ progress: analysisProgress });
+// Broadcast progress to all WebSocket clients
+const broadcastProgress = (progress) => {
+    wss.clients.forEach(client => {
+        if (client.readyState === WebSocket.OPEN) {
+            client.send(JSON.stringify({ progress }));
+        }
+    });
+};
+
+// Additional route handlers as needed
+app.get("/dependency", (req, res) => { /* ...route handling code... */ });
+app.get("/graph/:type?", (req, res) => { /* ...route handling code... */ });
+
+// Start the server and WebSocket server
+server.listen(port, () => {
+    console.log('The server is now listening on port:', port);
 });
-
-app.get("/componentinfo", (req, res) => {
-    const keyfile = require("../data/key.json");
-    let result = [{ "Message": "Data loading..." }];
-
-    console.log("Fetching the component's info")
-    result = keyfile
-    res.json(result);
-});
-
-app.get("/graph/:type?", (req, res) => {
-    const itemsfile = require("../data/data.json");
-    let result = [{ "Message": "Data loading..." }];
-
-    // Check if type is 'basedir' or undefined
-    if (req.params.type === "basedir") {
-        console.log("Fetching the filtered dependencies.");
-
-        result = itemsfile.map((item, index) => {
-            // Split the base_dir and take the last two parts
-            const baseDirParts = item.base_dir.split("/");
-            const shortBaseDir = baseDirParts.slice(-2).join("/");
-
-            // Return the short base_dir as "1", "2", etc.
-            return {
-                dependency: shortBaseDir,
-                used: item.maven_analyse_used
-            };
-        });
-    } else {
-        console.log("Fetching all data.");
-        result = itemsfile;
-    }
-
-    res.json(result);
-});
-
-
-app.listen(port);
-console.log('The server is now listening on: ' + port);

@@ -11,12 +11,12 @@ OUTPUT_FILE = "../data/component_dependencies.json"
 # Parse arguments passed from the server
 docs = json.loads(sys.argv[1])
 
-# Function to parse pom.xml and check for a specific dependency
+# Function to parse pom.xml and check for a specific dependency, returning version if found
 def parse_pom_for_dependency(pom_path, target_group_id, target_artifact_id):
     try:
         tree = ET.parse(pom_path)
         root = tree.getroot()
-        ns = {'mvn': 'http://maven.apache.org/POM/4.0.0'}  # Namespace for Maven POM
+        ns = {'mvn': 'http://maven.apache.org/POM/4.0.0'}
         
         dependencies = root.findall(".//mvn:dependency", ns)
         
@@ -24,16 +24,17 @@ def parse_pom_for_dependency(pom_path, target_group_id, target_artifact_id):
             dep_group_id = dependency.find("mvn:groupId", ns).text
             dep_artifact_id = dependency.find("mvn:artifactId", ns).text
             
+            # If target dependency is found, retrieve its version
             if dep_group_id == target_group_id and dep_artifact_id == target_artifact_id:
-                return True
+                version = dependency.find("mvn:version", ns).text if dependency.find("mvn:version", ns) is not None else "unknown"
+                return True, version
     except ET.ParseError as e:
         print(f"Error parsing {pom_path}: {e}")
-        return False
     except Exception as e:
         print(f"Unexpected error while processing {pom_path}: {e}")
-        return False
+    return False, None
 
-# Function to scan directories and find dependencies for a specific doc
+# Updated find_dependencies function to save dependent's own group_id, artifact_id, and target version
 def find_dependencies(doc):
     target_group_id = doc['group_id']
     target_artifact_id = doc['name']
@@ -47,17 +48,53 @@ def find_dependencies(doc):
         for filename in filenames:
             if filename == "pom.xml":
                 pom_path = os.path.join(dirpath, filename)
-                if parse_pom_for_dependency(pom_path, target_group_id, target_artifact_id):
+                found, version = parse_pom_for_dependency(pom_path, target_group_id, target_artifact_id)
+                if found:
                     component_dir = os.path.dirname(pom_path)
+                    # Now capture the dependent's group_id and artifact_id
+                    dep_group_id, dep_artifact_id = extract_component_info(pom_path)
                     dependencies.append({
                         "base_dir": component_dir,
-                        "group_id": target_group_id,
-                        "artifact_id": target_artifact_id,
+                        "group_id": dep_group_id,
+                        "artifact_id": dep_artifact_id,
+                        "target_version": version,
                     })
                     print(f"Dependency found in: {pom_path}")
                     sys.stdout.flush()
 
     return dependencies
+
+# Function to extract group_id and artifact_id from the pom.xml of the dependent component
+def extract_component_info(pom_path):
+    try:
+        tree = ET.parse(pom_path)
+        root = tree.getroot()
+        ns = {'mvn': 'http://maven.apache.org/POM/4.0.0'}  # Namespace for Maven POM
+
+        # Extract groupId and artifactId from the project
+        group_id = root.find("mvn:groupId", ns)
+        artifact_id = root.find("mvn:artifactId", ns)
+
+        # In some cases, groupId and artifactId are nested within a parent element
+        # If not found directly under project, look under parent
+        if group_id is None:
+            group_id = root.find("mvn:parent/mvn:groupId", ns)
+        if artifact_id is None:
+            artifact_id = root.find("mvn:parent/mvn:artifactId", ns)
+
+        # Extract text from the found elements or set to "unknown" if not found
+        group_id = group_id.text if group_id is not None else "unknown"
+        artifact_id = artifact_id.text if artifact_id is not None else "unknown"
+        
+        return group_id, artifact_id
+
+    except ET.ParseError as e:
+        print(f"Error parsing {pom_path}: {e}")
+    except Exception as e:
+        print(f"Unexpected error while processing {pom_path}: {e}")
+
+    return "unknown", "unknown"
+
 
 # Run Maven dependency analysis on a directory to check for unused dependencies
 def run_maven_dependency_analyze(base_dir):
