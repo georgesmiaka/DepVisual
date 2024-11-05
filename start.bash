@@ -16,7 +16,7 @@ menu() {
             1)  # Scan the root directory
                 clear
                 echo "Scan the root directory to detect all components..."
-                python3 dep_scan_root_dir.py
+                python3 client/dep_scan_root_dir.py
                 echo ""
                 echo "Scanning completed. All components have been detected successfully."
                 echo ""
