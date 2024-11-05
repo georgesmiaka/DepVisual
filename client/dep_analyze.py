@@ -141,3 +141,50 @@ with open(OUTPUT_FILE, 'w') as json_file:
 
 print(f"Component dependencies saved to {OUTPUT_FILE}")
 sys.stdout.flush()
+
+
+
+# Beginning dependency filtering
+# Load final_dependencies.json file
+print("")
+print("Starting to filter dependencies...")
+print("")
+with open('../data/component_dependencies.json', 'r') as file:
+    final_dependencies = json.load(file)
+
+# Function to filter dependencies
+def filter_dependencies(dependencies):
+    filtered = {}
+
+    # Iterate over each component and its dependencies
+    for component, deps in dependencies.items():
+        filtered[component] = []  # Initialize a list to store filtered dependencies for this component
+        
+        # Iterate over each dependency
+        for dep in deps:
+            should_add = True
+            
+            # Check if current dependency is part of a shorter base_dir already in filtered
+            for existing_dep in filtered[component]:
+                if dep['base_dir'].startswith(existing_dep['base_dir']):
+                    # Check if both dependencies share the same maven_analyse_used status
+                    if dep['maven_analyse_used'] == existing_dep['maven_analyse_used']:
+                        should_add = False  # Don't add the child if both statuses match
+                        break
+
+            if should_add:
+                filtered[component].append(dep)  # Add the dependency to the filtered list
+    
+    return filtered
+
+# Apply the filter to final_dependencies
+filtered_dependencies = filter_dependencies(final_dependencies)
+
+# Save the filtered data to a new file
+with open('../data/component_dependencies_filtered.json', 'w') as output_file:
+    json.dump(filtered_dependencies, output_file, indent=4)
+
+print("")
+print("Filtered dependencies saved to data/component_dependencies_filtered.sjon")
+sys.stdout.flush()
+print("")

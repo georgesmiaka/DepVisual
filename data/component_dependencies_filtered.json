@@ -29,31 +29,10 @@
             "maven_analyse_used": false
         },
         {
-            "base_dir": "../../soa-solution/core-services/soa-service-handler/protocol/soa",
-            "group_id": "com.wirelesscar.tsdp.sh.protocol",
-            "artifact_id": "service-handler-protocol-soa",
-            "target_version": "unknown",
-            "maven_analyse_used": false
-        },
-        {
             "base_dir": "../../soa-solution/core-services/soa-servicedatacodec-service",
             "group_id": "com.wirelesscar.soa.servicedatacodec",
             "artifact_id": "soa-servicedatacodec-service",
             "target_version": "${soa-asn1-codec.version}",
-            "maven_analyse_used": false
-        },
-        {
-            "base_dir": "../../soa-solution/core-services/soa-servicedatacodec-service/codec",
-            "group_id": "com.wirelesscar.soa.servicedatacodec",
-            "artifact_id": "soa-servicedatacodec-service-codec",
-            "target_version": "unknown",
-            "maven_analyse_used": false
-        },
-        {
-            "base_dir": "../../soa-solution/core-services/soa-servicedatacodec-service/app",
-            "group_id": "com.wirelesscar.soa.servicedatacodec",
-            "artifact_id": "soa-servicedatacodec-service-server",
-            "target_version": "unknown",
             "maven_analyse_used": false
         }
     ],
@@ -66,13 +45,6 @@
             "maven_analyse_used": false
         },
         {
-            "base_dir": "../../soa-solution/services/soa-rbc/app",
-            "group_id": "com.wirelesscar.soa.rbc",
-            "artifact_id": "soa-rbc-app",
-            "target_version": "unknown",
-            "maven_analyse_used": false
-        },
-        {
             "base_dir": "../../soa-solution/services/soa-ccc-server",
             "group_id": "com.wirelesscar.soa.ccc",
             "artifact_id": "soa-ccc-server",
@@ -80,24 +52,10 @@
             "maven_analyse_used": false
         },
         {
-            "base_dir": "../../soa-solution/services/soa-ccc-server/app",
-            "group_id": "com.wirelesscar.soa.ccc",
-            "artifact_id": "soa-ccc-server-app",
-            "target_version": "unknown",
-            "maven_analyse_used": false
-        },
-        {
             "base_dir": "../../soa-solution/scheduler/scheduled-events-processor",
             "group_id": "com.wirelesscar.soa.scheduler.service",
             "artifact_id": "scheduled-events-processor",
             "target_version": "${soa-starter-scheduling.version}",
-            "maven_analyse_used": false
-        },
-        {
-            "base_dir": "../../soa-solution/scheduler/scheduled-events-processor/app",
-            "group_id": "com.wirelesscar.soa.scheduler.service",
-            "artifact_id": "scheduled-events-processor-app",
-            "target_version": "unknown",
             "maven_analyse_used": false
         }
     ],

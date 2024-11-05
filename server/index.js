@@ -94,7 +94,37 @@ const broadcastProgress = (progress) => {
 };
 
 // Additional route handlers as needed
-app.get("/dependency", (req, res) => { /* ...route handling code... */ });
+app.get("/dependency", (req, res) => {
+    // Clear the require cache so that the server reloads new content every time
+    // the client calls this api.
+    delete require.cache[require.resolve("../data/component_dependencies_filtered.json")];
+
+    // Re-require the file to get the updated content
+    const itemsfile = require("../data/component_dependencies_filtered.json");
+
+    let result = [{ "Message": "Data loading..." }];
+
+    maxQueryParam = Object.keys(req.query).length;
+
+    switch (maxQueryParam) {
+        case 1:
+            if (req.query.keyword) {
+                console.log("Searching for dependency containing: " + req.query.keyword + " in the data.");
+
+                result = itemsfile.filter(item =>
+                    item.base_dir.includes(req.query.keyword));
+
+            }
+            break;
+
+        default:
+            console.log("Fetching list containing the components and their dependencies")
+            result = itemsfile
+            break;
+    }
+    res.json(result);
+});
+
 app.get("/graph/:type?", (req, res) => { /* ...route handling code... */ });
 
 // Start the server and WebSocket server
