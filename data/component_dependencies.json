@@ -63,7 +63,7 @@
             "group_id": "com.wirelesscar.soa.rbc",
             "artifact_id": "soa-rbc",
             "target_version": "${soa-starter-scheduling.version}",
-            "maven_analyse_used": false
+            "maven_analyse_used": true
         },
         {
             "base_dir": "../../soa-solution/services/soa-rbc/app",

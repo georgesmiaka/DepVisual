@@ -5,7 +5,6 @@
 # Main menu
 menu() {
     while true; do
-        echo ""
         echo "What would you like to do?"
         echo "1. Track dependencies"
         echo "2. Dependencies Visualization"
@@ -20,20 +19,19 @@ menu() {
                 echo ""
                 echo "Scanning completed. All components have been detected successfully."
                 echo ""
-                sub_menu
+                clear
                 ;;
             2)  # Start dependency analysis and show sub-menu
                 clear
                 echo ""
                 echo "Starting web server..."
                 cd server
-                npm i
                 npm start &
                 cd ..
-                cd webclient
+                cd ..
+                cd DepVisual-webclient
                 echo ""
                 echo "Starting web client..."
-                npm i
                 npm start &
                 cd ..
                 echo ""
